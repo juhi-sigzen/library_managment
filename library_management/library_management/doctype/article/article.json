@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-04-10 13:23:12.316175",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "author_name",
+  "image",
+  "author",
+  "isbn",
+  "column_break_vk234",
+  "status",
+  "publisher",
+  "section_break_opfge",
+  "description",
+  "reviews"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Author"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Avaliable\nIssued"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "column_break_vk234",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_opfge",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "reviews",
+   "fieldtype": "Table",
+   "label": "Reviews",
+   "options": "Article Review"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-10 15:45:11.019634",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Issued"
+  }
+ ]
+}
