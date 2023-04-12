@@ -78,7 +78,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-10 15:45:11.019634",
+ "modified": "2023-04-11 11:56:06.917922",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -119,6 +119,7 @@
    "share": 1
   }
  ],
+ "search_fields": "author,isbn,publisher",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

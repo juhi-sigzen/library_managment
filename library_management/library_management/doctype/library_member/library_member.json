@@ -12,7 +12,9 @@
   "last_name",
   "full_name",
   "email_address",
-  "phone"
+  "phone",
+  "date_of_birth",
+  "age"
  ],
  "fields": [
   {
@@ -43,13 +45,23 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "label": "Phone"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "label": "Age"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-10 16:55:00.439048",
+ "modified": "2023-04-11 14:55:25.688707",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",

@@ -6,8 +6,13 @@ from frappe.model.docstatus import DocStatus
 
 class LibraryMembership(Document):
 	def validate(self):
-		if self.to_date <=  self.from_date:
-			frappe.throw("To date cannot be later than from date")
+		#if self.to_date <=  self.from_date:
+			#frappe.throw("To date cannot be later than from date")
+			#get laon period and compute to_date by adding loan period
+		loan_period  = frappe.db.get_single_value("Library Settings" , "loan_period")
+		self.to_date = frappe.utils.add_days(self.from_date , loan_period or 30)
+
+
 	def before_submit(self):
 		exists = frappe.db.exists(
 			"Library Membership",
